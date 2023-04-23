@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "sensor_1",
+        "data": "temperature",
+        "location": {
+            "place":"inside",
+            "description":"bedroom"
+        },
+        "type": "passive",
+        "range": "integer",
+        "connecting": true
+    },
+    {
+        "id": 2,
+        "name": "sensor_2",
+        "data": "temperature",
+        "location": {
+            "place":"inside",
+            "description":"bedroom"
+        },
+        "type": "passive",
+        "range": "integer",
+        "connecting": true
+    },
+    {
+        "id": 3,
+        "name": "sensor_3",
+        "data": "temperature",
+        "location": {
+            "place":"inside",
+            "description":"bedroom"
+        },
+        "type": "passive",
+        "range": "integer",
+        "connecting": true
+    },
+    {
+        "id": 4,
+        "name": "sensor_4",
+        "data": "temperature",
+        "location": {
+            "place":"inside",
+            "description":"bedroom"
+        },
+        "type": "passive",
+        "range": "integer",
+        "connecting": true
+    },
+    {
+        "id": 5,
+        "name": "sensor_5",
+        "data": "temperature",
+        "location": {
+            "place":"inside",
+            "description":"bedroom"
+        },
+        "type": "passive",
+        "range": "integer",
+        "connecting": true
+    },
+    {
+        "id": 6,
+        "name": "sensor_6",
+        "data": "temperature",
+        "location": {
+            "place":"inside",
+            "description":"bedroom"
+        },
+        "type": "passive",
+        "range": "integer",
+        "connecting": true
+    }
+]

@@ -1,0 +1,21 @@
+20230407	01:18:11	7c6e80d1-f196-471c-8bb8-692fb78bb595	Error: Not allowed by CORS
+20230407	01:32:20	f84f2af1-529a-4553-9aa6-073b4126d5e7	Error: Cannot set headers after they are sent to the client
+20230407	23:57:52	5ce4cc34-e060-4c37-a803-df888b9f2b37	Error: Not allowed by CORS
+20230408	21:57:29	99100807-f711-409e-a276-2c0ae8dac52b	TypeError: authHeader?.startWith is not a function
+20230408	21:58:40	a7d64059-c6fc-4f60-b2bf-750008ee975f	TypeError: authHeader?.starstWith is not a function
+20230408	22:04:29	b7a9c9de-6f70-477d-a800-c7e033a758a6	TypeError: rolesArray.includes(...).find is not a function
+20230416	13:34:19	e6d1abb2-9259-4cdc-bc92-39340cca2808	Error: Not allowed by CORS
+20230416	13:34:22	a489e622-f865-43a4-8f2d-ca64fa8ed06f	Error: Not allowed by CORS
+20230416	13:35:51	290c1d33-65ea-407e-a303-efbe612c9412	TypeError: res.headers is not a function
+20230416	13:35:53	46505c7f-c4b2-41e5-a135-ac90c16375f7	TypeError: res.headers is not a function
+20230416	13:35:53	5b157d52-bf3c-4a68-b4db-3ab73ccd64ee	TypeError: res.headers is not a function
+20230416	13:41:34	e0c84e3e-9db2-41d5-8cf6-671c33fdbf0a	TypeError: res.headers is not a function
+20230416	13:42:03	1edac036-0bf2-438b-b18a-4a039fdb606f	TypeError: res.headers is not a function
+20230416	13:42:04	7da5142f-04c1-4aa7-b004-3dc076b4bc68	TypeError: res.headers is not a function
+20230416	13:44:09	39ef75b2-3dc1-4f56-9873-5e498c8531e6	TypeError: res.headers is not a function
+20230416	13:45:13	a72289ec-17db-48d1-b2bd-ad4fcc9bb1c9	TypeError: res.headers is not a function
+20230416	13:46:47	426cbe66-4223-428a-9260-a2e0d5fa6a51	TypeError: res.headers is not a function
+20230416	13:50:42	09832530-8323-4950-a39c-278968f6eb5e	TypeError: res.headers is not a function
+20230416	13:50:44	3a2366ff-2474-43bc-a331-adec98e44fb9	TypeError: res.headers is not a function
+20230416	13:56:45	9731b835-87a8-4f4d-9a2f-82e3a7b8d631	TypeError: res.headers is not a function
+20230416	13:57:01	8340e8ca-3234-4a2e-bba3-82a53315bfa3	TypeError: res.headers is not a function
