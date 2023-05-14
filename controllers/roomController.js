@@ -4,9 +4,7 @@ const User = require("../model/User");
 const addNewRoom = async (req, res) => {
   const { roomName } = req.body;
   if (!roomName)
-    return res
-      .status(400)
-      .json({ message: "roomName are reqiured." });
+    return res.status(400).json({ message: "roomName are reqiured." });
   // check for duplicate usernames in the db
   console.log(`username: ${req.username}`);
   const username = req.username;
@@ -56,7 +54,7 @@ const updateRoom = async (req, res) => {
 
   if (req?.body?.roomName) room.roomName = req.body.roomName;
   const result = await room.save();
-  res.json(result);
+  res.status(201).json(result);
 };
 
 const deleteRoom = async (req, res) => {
@@ -70,13 +68,15 @@ const deleteRoom = async (req, res) => {
   if (!foundUser) return res.sendStatus(401); //Unauthorized
 
   const room = await Room.findOne({ _id: roomID });
-  if (!room)
+  if (!room){
     return res.status(204).json({ message: `No any rooms witn ID: ${roomID}` });
+  }
+    
 
   if (room.userID != foundUser._id)
     return res.status(403).json({ message: `No permition` });
 
-  const result = await room.deleteOne({_id: roomID});
+  const result = await room.deleteOne({ _id: roomID });
   res.json(result);
 };
 
