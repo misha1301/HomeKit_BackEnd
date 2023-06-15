@@ -1,5 +1,6 @@
 const Room = require("../model/Room");
 const User = require("../model/User");
+const Controller = require("../model/Controller");
 
 const addNewRoom = async (req, res) => {
   const { roomName } = req.body;
@@ -68,13 +69,17 @@ const deleteRoom = async (req, res) => {
   if (!foundUser) return res.sendStatus(401); //Unauthorized
 
   const room = await Room.findOne({ _id: roomID });
-  if (!room){
+  if (!room) {
     return res.status(204).json({ message: `No any rooms witn ID: ${roomID}` });
   }
-    
 
   if (room.userID != foundUser._id)
     return res.status(403).json({ message: `No permition` });
+
+  const controller = await Controller.findOne({ roomID: roomID });
+  if (controller) {
+    controller.deleteOne({ _id: controller._id });
+  }
 
   const result = await room.deleteOne({ _id: roomID });
   res.json(result);

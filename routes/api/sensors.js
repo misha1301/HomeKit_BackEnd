@@ -7,12 +7,12 @@ const verifyRoles = require('../../middleware/verifyRoles');
 
 router.route('/')
     //.get(verifyJWT, sensorController.getAllSensors)
-    .get(verifyRoles(ROLES_LIST.Admin), sensorController.getAllSensors)
+    .get(verifyRoles(ROLES_LIST.Admin), sensorController.getAllUserControllers)
     .post(sensorController.addNewSensor)
     .put(sensorController.updateSensor)
     .delete(verifyRoles(ROLES_LIST.Admin), sensorController.deleteSensor);
 
 router.route('/:id')
-    .get(sensorController.getSensor);
+    .get(sensorController.getRoomControllers);
 
 module.exports = router;
