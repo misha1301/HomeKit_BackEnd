@@ -29,7 +29,9 @@ const updateController = async (req, res) => {
     controller.sensors.outside.temperature = req.body.outsideTemperature;
   if (req?.body?.outsideHumidity)
     controller.sensors.outside.humidity = req.body.outsideHumidity;
-    controller.lastConnection =  new Date();
+    const currentDate = new Date();
+    controller.state.lastConnection = currentDate;
+    console.log(currentDate);
 
   if (req?.body?.settingState == 0) {
     if (controller.state.setings == true) {
