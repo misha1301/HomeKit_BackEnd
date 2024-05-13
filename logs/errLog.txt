@@ -19,3 +19,8 @@
 20230416	13:50:44	3a2366ff-2474-43bc-a331-adec98e44fb9	TypeError: res.headers is not a function
 20230416	13:56:45	9731b835-87a8-4f4d-9a2f-82e3a7b8d631	TypeError: res.headers is not a function
 20230416	13:57:01	8340e8ca-3234-4a2e-bba3-82a53315bfa3	TypeError: res.headers is not a function
+20230530	17:31:00	f945846e-577b-472d-bbc2-aa84a4668ac2	Error: Not allowed by CORS
+20230530	17:31:02	0eac9a60-7518-47c4-907c-1874cee3d479	Error: Not allowed by CORS
+20230530	17:31:03	fa484426-3d8c-4d58-8776-5fe0027f7ca7	Error: Not allowed by CORS
+20230530	17:34:10	d497be12-768b-4e7b-8a97-12e664348a02	Error: Not allowed by CORS
+20230530	17:34:16	4cd7f034-ef63-4870-adbd-735f491a2221	Error: Not allowed by CORS

@@ -10,7 +10,7 @@ const verifyJWT = require('./middleware/verifyJWT');
 const cookieParser = require('cookie-parser');
 const credentials = require('./middleware/credentials');
 const mongoose = require('mongoose');
-const connectDB = require('./config/dbConnection')
+const connectDB = require('./config/dbConnection');
 const PORT = process.env.PORT || 5500;
 
 //connect to MongoDB
@@ -47,6 +47,7 @@ app.use('/register',require('./routes/register'));
 app.use('/login',require('./routes/auth'));
 app.use('/refresh',require('./routes/refresh'));
 app.use('/logout',require('./routes/logout'));
+app.use('/updating',require('./routes/updating'));
 
 app.use(verifyJWT);
 app.use('/sensors',require('./routes/api/sensors'));

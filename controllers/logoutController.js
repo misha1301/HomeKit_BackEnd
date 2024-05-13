@@ -10,7 +10,7 @@ const handleLogout = async (req, res) => {
     // is refresh token in db?
     const foundUser = await User.findOne({refreshToken}).exec();
     if(!foundUser){
-        res.clearCookie("jwt", {httpOnly: true, sameSite: 'None', secure: true}); //secure: true - only an https
+        res.clearCookie("jwt", {httpOnly: true, sameSite: 'None'}); //secure: true - only an https
         return res.sendStatus(403);
     }
     
@@ -19,7 +19,7 @@ const handleLogout = async (req, res) => {
     const result = await foundUser.save();
     console.log(result);
 
-    res.clearCookie("jwt", {httpOnly: true, sameSite: 'None', secure: true}); //secure: true - only an https
+    res.clearCookie("jwt", {httpOnly: true, sameSite: 'None'}); //secure: true - only an https
     res.sendStatus(204);
 }
 
